@@ -25,7 +25,7 @@
 
 </style>
 
-<h5 class="display-5">
+<h5 class="display-5" style="margin-top: 2em">
     @Html.ActionLink("Home", "Index") > @Html.ActionLink("Product Specification", "Buy", new { id = ViewBag.ProductID }) > Ordering Laptop: <b> @ViewBag.ProductName</b>
 </h5>
 
@@ -33,7 +33,7 @@
     <div class="row d-flex justify-content-center" style="margin-top: 2em;">
         <div class="col-md-6 col-xs-12 flex-center" style="flex-direction: column; align-items: flex-start">
             <h5><b>Ordering Laptop:</b></h5><br />
-            <div class="d-flex">
+            <div class="d-flex flex-center">
                 <img src="@Url.Content(ViewBag.ImagePath)" width="100" />
                 <div class="d-flex flex-column" style="margin-left: 2em">
                     <h5>Product Name: <b>@Model.Product_Name</b></h5>
