@@ -18,12 +18,14 @@ namespace ELaptop.Controllers
         private ProductDBContext db = new ProductDBContext();
 
         // GET: Products
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Products.ToList());
         }
 
         // GET: Products/Details/5
+        [Authorize]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -39,6 +41,7 @@ namespace ELaptop.Controllers
         }
 
         // GET: Products/Create
+        [Authorize]
         public ActionResult Create()
         {
             Debug.WriteLine("From create controller");
@@ -50,8 +53,7 @@ namespace ELaptop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-        //[Bind(Include = "Product_id,Product_name,Category,Price,ImagePath")] 
+        [Authorize]
         public ActionResult Create(Product product)
         {
             if (ModelState.IsValid)
@@ -89,6 +91,7 @@ namespace ELaptop.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Upload(HttpPostedFileBase file)
         {
             Debug.WriteLine(file.FileName);
@@ -115,6 +118,7 @@ namespace ELaptop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit(Product product)
         {
             if (ModelState.IsValid)
@@ -155,6 +159,7 @@ namespace ELaptop.Controllers
         }
 
         // GET: Products/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -172,6 +177,7 @@ namespace ELaptop.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
             Product product = db.Products.Find(id);

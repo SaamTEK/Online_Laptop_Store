@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ELaptop.Models.Product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Manage Laptops";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -50,10 +50,10 @@
         @Html.DisplayFor(modelItem => item.CPU)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.RAM)
+        @Html.DisplayFor(modelItem => item.RAM) GB
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Storage)
+        @Html.DisplayFor(modelItem => item.Storage) GB
     </td>
     <td>
         <img src="@Url.Content(item.ImagePath)" width="100" height="100" />

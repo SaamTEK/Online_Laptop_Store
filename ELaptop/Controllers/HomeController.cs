@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ELaptop.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace ELaptop.Controllers
 {
     public class HomeController : Controller
     {
+
+        private ProductDBContext db = new ProductDBContext();
         public ActionResult Index()
         {
-            return View();
+            return View(db.Products.ToList());
         }
 
         public ActionResult About()
