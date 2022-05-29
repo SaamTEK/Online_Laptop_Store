@@ -110,3 +110,8 @@ D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.InitialCreate.resour
 D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.csproj.GenerateResource.cache
 D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.InitTwo.resources
 D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.ProductFields.resources
+D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.dboOrders.resources
+D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.dboOrdersElementUpdate.resources
+D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.dboOrdersElementUpdate1.resources
+D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.dboOrdersElementUpdate2.resources
+D:\SimpliLearn\ELaptop\ELaptop\obj\Debug\ELaptop.Migrations.dboOrdersElementUpdate3.resources

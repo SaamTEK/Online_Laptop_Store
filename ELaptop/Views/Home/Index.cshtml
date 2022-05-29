@@ -38,7 +38,8 @@
                     </ul>
                     <div class="card-body">
                         <h5 class="card-title"><b>Price: ₹@item.Price</b></h5>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        @*<a href="#" class="btn btn-primary"></a>*@
+                        @Html.ActionLink("Buy now", "Buy", new { id = item.Product_id }, new { @class = "btn btn-primary" })
                     </div>
                 </div>
             </div>

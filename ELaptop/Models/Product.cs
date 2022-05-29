@@ -40,5 +40,7 @@ namespace ELaptop.Models
     public class ProductDBContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<ELaptop.Models.Order> Orders { get; set; }
     }
 }
